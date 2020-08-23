@@ -1,7 +1,29 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+// const defaultTheme = require("tailwindcss/defaultTheme");
+// const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-  theme: {},
+  // future: {
+  //   removeDeprecatedGapUtilities: true,
+  // },
+  // experimental: {
+  //   applyComplexClasses: true,
+  // },
+  purge: ["./docs/**/*.html"],
+  theme: {
+    extend: {},
+  },
   variants: {},
-  plugins: []
+  plugins: [
+    // require('@tailwindcss/typography'),
+    // plugin(function ({ addUtilities }) {
+    //     const additionalUtils = {
+    //       ".w-max-content": {
+    //         "width": "max-content"
+    //       },
+    //     }
+    //     addUtilities(additionalUtils, {
+    //       variants: [],
+    //     })
+    // })
+],
 };
