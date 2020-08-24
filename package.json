@@ -6,8 +6,8 @@
   "license": "",
   "scripts": {
     "serve": "concurrently \"postcss ./tailwind.css -o docs/build.css --watch\"  \"live-server --port=3333 ./docs \"",
-    "dev": "cross-env NODE_ENV=dev postcss ./tailwind.css -o docs/build.css",
-    "build": "cross-env NODE_ENV=build postcss ./tailwind.css -o docs/build.css"
+    "dev": "cross-env NODE_ENV=development postcss ./tailwind.css -o docs/build.css",
+    "build": "cross-env NODE_ENV=production postcss ./tailwind.css -o docs/build.css"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
