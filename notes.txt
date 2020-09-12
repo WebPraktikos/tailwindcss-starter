@@ -1,0 +1,32 @@
+Looks like npm-check-updates is the only way to make this happen now.
+
+npm i -g npm-check-updates
+ncu -u
+npm install
+
+[or]
+
+npx npm-check-updates -u
+npm install
+
+---
+
+    "@tailwindcss/typography": "*",
+    "alpinejs": "*",
+
+---
+
+  "dependencies": {
+    "tailwindcss": "*",
+    "@tailwindcss/typography": "*",
+    "autoprefixer": "*"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "cross-env": "*",
+    "cssnano": "*",
+    "esbuild": "*",
+    "npm-run-all": "*",
+    "postcss-cli": "*",
+    "postcss-import": "*"
+  }

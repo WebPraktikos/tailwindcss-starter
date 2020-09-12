@@ -1,24 +1,29 @@
 {
   "name": "tailwindcss-starter",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "",
   "author": "",
   "license": "",
   "scripts": {
-    "serve": "concurrently \"postcss ./tailwind.css -o docs/build.css --watch\"  \"live-server --port=3333 ./docs \"",
-    "dev": "cross-env NODE_ENV=development postcss ./tailwind.css -o docs/build.css",
-    "build": "cross-env NODE_ENV=production postcss ./tailwind.css -o docs/build.css"
+    "watch-and-build-css": "postcss ./tailwind.css -o docs/build.css --watch",
+    "live-reload-server": "browser-sync start --server 'docs' --files '*.html' 'build.css' --port 3333 --watch",
+    "build-js": "esbuild --bundle main.js --outfile=./docs/build.js --minify --sourcemap",
+    "build-css": "cross-env NODE_ENV=production postcss ./tailwind.css -o docs/build.css",
+    "serve": "npm-run-all --parallel watch-and-build-css build-js live-reload-server",
+    "build": "npm-run-all --parallel build-css build-js"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.6",
-    "tailwindcss": "^1.7.3"
+    "tailwindcss": "*",
+    "@tailwindcss/typography": "*",
+    "autoprefixer": "*"
   },
   "devDependencies": {
-    "postcss-import": "^12.0.1",
-    "concurrently": "^5.3.0",
-    "cross-env": "^7.0.2",
-    "cssnano": "^4.1.10",
-    "live-server": "^1.2.1",
-    "postcss-cli": "^7.1.1"
+    "browser-sync": "*",
+    "cross-env": "*",
+    "cssnano": "*",
+    "esbuild": "*",
+    "npm-run-all": "*",
+    "postcss-cli": "*",
+    "postcss-import": "*"
   }
 }

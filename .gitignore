@@ -3,3 +3,4 @@ package-lock.json
 /node_modules/
 /docs/build.css
 /docs/build.js
+/docs/build.js.map
