@@ -14,52 +14,52 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  // plugins: [
-  //   require('@tailwindcss/typography'),
-  //   plugin(function ({ addUtilities, addComponents, addBase }) {
+  plugins: [
+    // require('@tailwindcss/typography'),
+    // plugin(function ({ addUtilities, addComponents, addBase }) {
 
-  //       /**
-  //        *    Additional Utilities
-  //        */
-  //       const additionalUtils = {
-  //         ".w-max-content": {
-  //           "width": "max-content"
-  //         },
-  //       }
+      /**
+       *    Additional Utilities
+       */
+      // const additionalUtils = {
+      //   ".w-max-content": {
+      //     "width": "max-content"
+      //   },
+      // }
 
-  //       addUtilities(additionalUtils, {
-  //         variants: [],
-  //       })
+      // addUtilities(additionalUtils, {
+      //   variants: [],
+      // })
 
-  //       /**
-  //        *    Components
-  //        */
-  //       const components = {
-  //         ".iframe-parent": {
-  //           "position": "relative",
-  //           "height": 0,
-  //           "padding-bottom": "calc(var(--aspect-ratio-vertical, 9) / var(--aspect-ratio-horizontal, 16) * 100%)",
-  //         },
-  //         ".iframe-parent > iframe": {
-  //           "position": "absolute",
-  //           "width": "100%",
-  //           "height": "100%",
-  //         },
-  //       }
+      /**
+       *    Components
+       */
+      // const components = {
+      //   ".iframe-parent": {
+      //     "position": "relative",
+      //     "height": 0,
+      //     "padding-bottom": "calc(var(--aspect-ratio-vertical, 9) / var(--aspect-ratio-horizontal, 16) * 100%)",
+      //   },
+      //   ".iframe-parent > iframe": {
+      //     "position": "absolute",
+      //     "width": "100%",
+      //     "height": "100%",
+      //   },
+      // }
 
-  //       addComponents(components, {
-  //         variants: [],
-  //       })
+      // addComponents(components, {
+      //   variants: [],
+      // })
 
-  //       /**
-  //        *    Additional Base Styles
-  //        */
-  //       const additionalBaseStyles = {}
+      /**
+       *    Additional Base Styles
+       */
+      // const additionalBaseStyles = {}
 
-  //       addBase(additionalBaseStyles, {
-  //         variants: [],
-  //       })
+      // addBase(additionalBaseStyles, {
+      //   variants: [],
+      // })
 
-  //   })
-  // ],
+    // })
+  ],
 };
