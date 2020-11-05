@@ -13,7 +13,7 @@
     "build": "npm-run-all --parallel build-css build-js"
   },
   "dependencies": {
-    "tailwindcss": "^1.8.7",
+    "tailwindcss": "^1.9.6",
     "autoprefixer": "^9.8.6"
   },
   "devDependencies": {
